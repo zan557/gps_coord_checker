@@ -1,0 +1,28 @@
+<!-- templates/home.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RP Flask REST API</title>
+</head>
+<body>
+    <!-- .... -->
+
+    <H1>Hello, this is the index</H1>
+
+    {% if config['DEBUG'] %}
+        <pre>
+            <code>
+                {{ config }}
+            </code>
+        </pre>
+
+        <style>
+            pre {
+                white-space: pre-wrap;
+            }
+        </style>
+    {% endif %}
+</body>
+</html>
